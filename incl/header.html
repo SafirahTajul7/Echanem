@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="../css/stylehome.css">
+
+<header style="background-image: url('images/header1.jpeg');">
+    <div>
+        <a href="../page/home.php"><img src="../resources/logo_echanem.png" alt="Echanem" height="48"></a>
+    </div>
+    <div class="nav-links">
+        <div class="dropdown">
+            <button class="dropbtn">New Arrivals</button>
+            <div class="dropdown-content">
+                <a href="catalogue.php?search=&gender%5B%5D=Women">Women</a>
+                <a href="catalogue.php?search=&gender%5B%5D=Men">Men</a>
+                
+            </div>
+        </div>
+    </div>
+    <div class="account-section">
+        <?php 
+            echo '<b>'. $greet . '</b>';
+            echo $profile_button;
+            echo '<a href="cart.php"><i class="fas fa-shopping-cart"></i> Shopping Cart</a>';
+            echo $log_button;
+        ?>
+    </div>
+</header>
