@@ -1,0 +1,45 @@
+    
+    /* Sweetener FX */
+    .grad-fx {
+        background: linear-gradient(270deg, #ffeae2, #f5e3fd, #f3ffe3);
+        background-size: 400% 400%;
+
+        -webkit-animation: gradient_fx 30s ease-in-out infinite;
+        -moz-animation: gradient_fx 30s ease-in-out infinite;
+        -o-animation: gradient_fx 30s ease-in-out infinite;
+        animation: gradient_fx 30s ease-in-out infinite;
+    }
+
+    @-webkit-keyframes gradient_fx {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes gradient_fx {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+
+
+    .grad-fx-plus {
+        background: linear-gradient(270deg, #ff8b5d, #cf5eff, #bcff64);
+        background-size: 400% 400%;
+
+        -webkit-animation: gradient_fx 15s ease-in-out infinite;
+        -moz-animation: gradient_fx 15s ease-in-out infinite;
+        -o-animation: gradient_fx 15s ease-in-out infinite;
+        animation: gradient_fx 15s ease-in-out infinite;
+    }
+
+    @-webkit-keyframes gradient_fx {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes gradient_fx {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    

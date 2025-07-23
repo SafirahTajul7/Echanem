@@ -1,0 +1,623 @@
+    html {
+        font-family: 'Palanquin', sans-serif;
+        font-size: 14px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Base styles for header */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: #fff; /* Change to your desired background color */
+        position: sticky; /* Makes the header stick to the top on scroll */
+        top: 0; /* Ensures the header sticks to the absolute top */
+        z-index: 10; /* Sets the stacking order to ensure the header stays on top */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    }
+
+    a { text-decoration: none; transition: all 0.2s ease-in-out; }
+
+    .bg-aest {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow: hidden;
+    }
+    
+    /* Style the logo */
+    .logo {
+        font-size: 1.5rem; /* Adjust font size as needed */
+        font-weight: bold;
+        color: #000; /* Change to your desired logo color */
+    }
+    
+    /* Style the navigation links */
+    .nav-links {
+        display: flex;
+    }
+    
+    /* Style the dropdown button */
+    .dropdown .dropbtn {
+        background-color: transparent; /* Makes the button background transparent */
+        border: none; /* Removes borders from the button */
+        cursor: pointer; /* Changes cursor to pointer on hover */
+        padding: 0.5rem 1rem; /* Adjust padding as needed */
+        font-size: 1rem; /* Adjust font size as needed */
+        color: #000; /* Change to your desired text color */
+    }
+    
+    /* Style the dropdown content */
+    .dropdown-content {
+        display: none; /* Hides the dropdown content initially */
+        position: absolute;
+        background-color: #fff; /* Change to your desired background color */
+        min-width: 100px; /* Sets minimum width for the dropdown */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+        z-index: 5; /* Sets stacking order for the dropdown content */
+    }
+    
+    /* Style the dropdown content on hover */
+    .dropdown:hover .dropdown-content {
+        display: block; /* Shows the dropdown content on hover */
+    }
+    
+    /* Style the dropdown content links */
+    .dropdown-content a {
+        color: black; /* Change to your desired link color */
+        padding: 0.5rem 1rem; /* Adjust padding as needed */
+        text-decoration: none; /* Removes underline from links */
+    }
+    
+    /* Style the dropdown content links on hover */
+    .dropdown-content a:hover {
+        background-color: #f1f1f1; /* Change to your desired hover background color */
+    }
+    
+    /* Style the account section */
+    .account-section {
+        display: flex;
+    }
+    
+    /* Style the account section links */
+    .account-section a {
+        margin-left: 1rem; /* Adds margin between links */
+        color: #000; /* Change to your desired link color */
+        text-decoration: none; /* Removes underline from links */
+    }
+    
+    /* Style the account section links on hover */
+    .account-section a:hover {
+        color: #333; /* Change to your desired hover link color */
+    }
+    
+    
+    .title {
+        text-align: center;
+        margin: 12px auto;
+        font-size: 1.5rem;
+    }
+
+    .title span {
+        color: #7000ff;
+        font-weight: bold;
+    }
+    
+    .container {
+        display: flex;
+        width: 100%;
+        max-width: 1200px;
+    }
+    
+    .sidebar {
+        width: 25%;
+        padding: 20px;
+        box-sizing: border-box;
+        position: sticky;
+        top: 0;
+        align-self: flex-start;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    
+    .catalog {
+        width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        box-sizing: border-box;
+        align-self: flex-start;
+    }
+    
+    .card {
+        width: calc(33.33% - 20px);
+        margin: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #fff;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .card-buttons {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 30px 0;
+        background: rgba(0,0,0, 0.75);
+        color: white;
+        transform: translateY(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover .card-buttons {
+        transform: translateY(0);
+    }
+
+    .card-buttons button {
+        background: #fff; /* Light gray background */
+        border: 1px solid #ddd; /* Light gray border */
+        border-radius: 8px;
+        color: #000; /* Text color */
+        padding: 8px; /* Adjust padding as needed */
+        font-size: 1em;
+        font-weight: bold; /* Bold text */
+        cursor: pointer;
+        transition: all 0.3s ease; /* Enables smooth hover effect */
+      }
+      
+    .card-buttons button:hover {
+        background: #e0e0e0; /* Slightly darker background on hover */
+    }
+
+    .card-buttons p { margin: 8px; }
+    
+    .card img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;;
+    }
+
+    .card-info {
+        padding: 12px;
+    }
+    
+    .card-text {
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-bottom: 1px;
+        text-align: left;
+    }
+
+    .card-buttons button {
+        cursor: pointer;
+    }
+    
+    .gnp {
+        font-size: 1em;
+        text-align: left;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .gnp p {
+        color: #7000ff;
+    }
+
+    .sidebar h2, .sidebar h3 {
+        margin-top: 0;
+    }
+    
+    .sidebar input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .sidebar label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .sidebar input[type="checkbox"] {
+        margin-right: 10px;
+    }
+    
+    .collapsible {
+        background-color: #f9f9f9;
+        color: black;
+        cursor: pointer;
+        padding: 10px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 16px;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .collapsible:hover { background-color: #e0e0e0; }
+
+    .active { color: #fff; }
+    .active:hover { color: #777; }
+    
+    .content {
+        padding: 0 10px;
+        display: none;
+        overflow: hidden;
+        background-color: #f9f9f9;
+    }
+    
+    .content label {
+        display: flex;
+        align-items: center;
+        padding: 5px 0;
+    }
+    
+    .content label:not(:last-child) {
+        border-bottom: 1px solid #ccc;
+    }
+
+    #apply-filter {
+        padding: 12px 16px;
+        margin: 16px 0;
+        border: none;
+        border-radius: 8px;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+    }
+
+
+
+    .cart-section {
+        width: 80%;
+        margin-top: 10vh;
+        padding: 2rem;
+        background: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .cart-section h1 {
+        text-align: right;
+        margin-bottom: 20px;
+        font-size: 2em;
+    }
+    
+    .cart-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    
+    .cart-table th, .cart-table td {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .cart-table th {
+        background: #f1f1f1;
+    }
+    
+    .cart-table img {
+        width: 50px;
+        height: auto;
+        border-radius: 4px;
+    }
+    
+    .cart-actions form {
+        display: inline;
+    }
+    
+    .cart-actions button {
+        padding: 5px 10px;
+        margin: 4px 2px;
+        font-size: 0.9em;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        color: white;
+    }
+    
+    #cart-update {
+        background-color: #7000ff;
+        color: white;
+    }
+
+    #cart-update:hover { background-color: #5010a5; }
+
+    #cart-remove {
+        background-color: #ff0000;
+        color: white;
+    }
+
+    #cart-remove:hover { background-color: #a31313; }
+    
+    .cart-total {
+        text-align: right;
+        margin-top: 20px;
+    }
+    
+    .cart-total button {
+        padding: 10px 20px;
+        font-size: 1em;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        background-color: #7000ff;
+        color: white;
+        transition: all 0.3s ease;
+    }
+    
+    .cart-total button:hover {
+        transform: scale(1.04);
+    }
+    
+
+    .product-detail {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        justify-content: center;
+    }
+    
+    .image-container {
+        flex: 1 1 300px;
+        max-width: 500px;
+        max-height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    
+    .details {
+        flex: 1 1 300px;
+        max-width: 500px;
+        padding: 20px;
+    }
+    
+    .details h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    
+    .details p {
+        margin-bottom: 20px;
+    }
+    
+    .price {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+    
+    .size-selection,
+    .quantity-selection {
+        margin-bottom: 20px;
+    }
+    
+    .size-selection label,
+    .quantity-selection label {
+        margin-right: 10px;
+    }
+    
+    #size, #quantity {
+        padding: 5px;
+        font-size: 1em;
+    }
+    
+    .buttons {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .buttons button {
+        padding: 10px 20px;
+        font-size: 1em;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        background-color: #7000ff;
+        color: white;
+    }
+    
+    .buttons button:hover {
+        background-color: #5212a5;
+    }
+    
+    .buttons button:active {
+        background-color: #5e4dff;
+    }
+
+    .recommended-products {
+        width: 100%;
+        margin-top: 5vh;
+        padding: 20px;
+    }
+    
+    .recommended-products h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .recommended-products hr {
+        margin: auto;
+        width: 72px;
+    }
+    
+    .recommended-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .rec-card {
+        width: 200px;
+        cursor: pointer;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.2s;
+    }
+ 
+    .rec-card:hover {
+        transform: scale(1.05);
+    }
+    
+    .rec-card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    
+    .rec-name {
+        font-size: 1em;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .rec-price {
+        font-size: 1.2em;
+        padding: 10px;
+        text-align: center;
+        color: #5212a5;
+    }
+
+    .payment {
+        background: #fff;
+        padding: 2rem;
+        margin: 15vh auto;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        max-width: 700px;
+        width: 100%;
+    }
+    .payment div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .payment a:hover {
+        transform: scale(1.025);
+    }
+    .payment h1 {
+        text-align: right;
+        color: #333;
+        font-size: 2rem;
+    }
+    .payment h2 {
+        color: #555;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .section {
+        margin-bottom: 2rem;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 1.5rem;
+    }
+    table th, table td {
+        padding: 1rem;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    table th {
+        background-color: #f8f8f8;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        letter-spacing: 0.1rem;
+    }
+    table tfoot td {
+        text-align: right;
+        font-weight: bold;
+    }
+    .tb-total th, .tb-total td {
+        border: none;
+        margin: 0;
+        padding: 4px 0;
+    }
+    .address-section textarea {
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        resize: vertical;
+    }
+    .payment-method, .delivery-method {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+    .payment-method label, .delivery-method label {
+        flex: 1;
+        padding: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-right: 0.5rem;
+        cursor: pointer;
+        text-align: center;
+        background-color: #f9f9f9;
+        transition: background-color 0.3s;
+    }
+    .payment-method label:last-child, .delivery-method label:last-child {
+        margin-right: 0;
+    }
+    .payment-method input, .delivery-method input {
+        display: none;
+    }
+    .payment-method input:checked + label {
+        background-color: #7000ff;
+        color: #fff;
+    }
+    .delivery-method input:checked + label {
+        background-color: #ff7b00;
+        color: #fff;
+    }
+    .payment-method label:hover {
+        background-color: #e0e0e0;
+    }
+
+    #checkout-btn {
+        width: 100%;
+        padding: 16px;
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 1.25rem;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    #checkout-btn:hover {
+        transform: scale(1.025);
+    }

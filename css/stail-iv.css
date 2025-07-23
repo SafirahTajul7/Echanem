@@ -1,0 +1,218 @@
+    .order-summary {
+        width: 80%;
+        max-width: 800px;
+        margin-top: 20vh;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+    .order-summary h1, .order-summary h2 {
+        color: #333;
+    }
+    .order-summary h1 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+    .order-summary h2 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    .order-summary p {
+        color: #555;
+        margin: 5px 0;
+    }
+    .order-summary table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    .order-summary table th, .order-summary table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+    .order-summary table th {
+        background-color: #f8f8f8;
+        color: #333;
+    }
+    .order-summary table td {
+        background-color: #fff;
+        color: #555;
+    }
+    .order-summary table tfoot td {
+        font-weight: bold;
+        background-color: #f8f8f8;
+    }
+    .order-summary button {
+        background-color: #7000ff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        transition: background-color 0.3s;
+    }
+    .order-summary button:hover {
+        background-color: #4c09a3;
+    }
+
+    .damn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+        gap: 20px;
+        height: 100%;
+    }
+
+    .damner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+        gap: 20px;
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .damner button {
+        cursor: pointer;
+    }
+
+    .profile-info, .orders {
+        flex: 1;
+        min-width: 400px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-height: 600px;
+    }
+
+    .orders {
+        overflow-y: scroll;
+    }
+
+    .profile-info ul, .orders ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .profile-info ul li, .orders ul li {
+        padding: 8px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .profile-info ul li:last-child, .orders ul li:last-child {
+        border-bottom: none;
+    }
+
+    .profile-info ul li strong, .orders ul li strong {
+        display: inline-block;
+        width: 150px;
+    }
+
+    .update-button {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .update-button a {
+        text-decoration: none;
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .update-button a:hover {
+        background-color: #0056b3;
+    }
+
+    .order-items {
+        margin-left: 20px;
+    }
+
+    .order {
+        margin-bottom: 20px;
+    }
+
+    .order h3 {
+        margin-top: 0;
+    }
+
+    .order-title {
+        width: 100%;
+        margin: 4px 0;
+        padding: 0 4px;
+        border: none;
+        border-radius: 2px;
+        color: #fff;
+    }
+
+    .receive-item-button {
+        background-color: #7000ff;
+        margin: 8px 0; 
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .receive-item-button:hover {
+        background-color: #5911b8;
+    }
+
+    .update-form {
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        max-width: 600px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .update-form form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .update-form form input {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .update-form form button {
+        padding: 10px;
+        margin-top: 10px;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .update-form form button:hover {
+        background-color: #0056b3;
+    }
+
+    .error ,.success {
+        border: none;
+        border-radius: 4px;
+        margin: 12px 0;
+        padding: 4px 16px;
+        color: white;
+    }
+
+    .error { background-color: #f53c36; }
+    .success { background-color: #41d133; }

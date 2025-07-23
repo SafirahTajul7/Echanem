@@ -1,0 +1,248 @@
+    /* We gonna hide media in certain screen sizes  */
+    @media (max-width: 1024px) { #pg_deco { display: none; } }
+    @media (max-width: 768px) { #pg_deco { display: none; } }
+    
+    html {
+        font-family: 'Palanquin';
+        font-size: 14px;
+    }
+    
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    a { text-decoration: none; color: #7000FF; }
+    p { color: #606060; }
+    h2 { font-size: 3rem; }
+    h3 { font-size: 1.75rem; }
+    
+    .scrn {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    #pg_deco {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .slaido {
+        background-image: url("../resources/collage_bh.png");
+        background-repeat: repeat-y;
+        height: 1848px;
+        width: 960px;
+        position: absolute;
+        animation: slide 10s linear infinite;
+    }
+
+    .slaido div {
+        background-color: rgba(0,0,0,0.65);
+        height: 100%;
+        width: 100%;
+    }
+
+    #pg_enter {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .title {
+        margin-bottom: 8px;
+    }
+
+    .title h2, .title p {
+        margin: 0;
+    }
+
+    #sign-up, #registered, #login {
+        width: 500px;
+        height: 500px;
+        text-align: justify;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sign-up { justify-content: space-between; padding: 50px 0; }
+    #login { justify-content: flex-start; padding-top: 100px; }
+
+    #sign-up form, #login form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input { font-size: 1.1rem; border-radius: 8px; }
+
+    .inIco {
+        display: flex;
+        align-items: center;
+        margin: 8px 0;
+        padding: 16px;
+        border-radius: 8px;
+        border: 2px solid #b0b0b0;
+        background-color: #f8f8f8;
+    }
+
+    .inIco i { font-size: 1.2rem; color: #b0b0b0; margin: 0; }
+
+    .inIco input {
+        border: none;
+        background: none;
+        /* background-color: #606060; */
+        width: 100%;
+        margin: 0 8px;
+        letter-spacing: 1px;
+    }
+
+    .inIco input:focus {
+        outline: none;
+    }
+
+    .inIco:focus-within {
+        border-color: #707070;
+      }
+
+    .inIco span { cursor: pointer; line-height: 20px; }
+
+    .inIco span i { transition: color 0.3s ease-in-out; }
+    .inIco span i:hover { color: #808080; }
+
+    #chckOn {
+        border: 2px solid #b0b0b0;
+        height: 20px; 
+        width: 20px;
+        margin-right: 8px;
+        cursor: pointer;
+    }
+
+    #reg-btn, #log-btn, #log-adm-btn, #rpw-btn {
+        border: 8px;
+        height: 60px;
+        background-color: #7000FF;
+        color: #fff;
+        font-weight: bolder;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+    }
+
+    #reg-btn:disabled { background-color: #8568aa; cursor: default; }
+    #rpw-btn { margin-top: 16px; }
+
+    #small-btn {
+        border-radius: 8px;
+        width: 120px;
+        padding: 12px 16px;
+        text-align: center;
+        background-color: #7000FF;
+        color: #fff;
+        font-weight: bolder;
+    }
+
+    #brand-cp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+    }
+
+    #brand-cp p {
+        font-size: 1rem;
+        color: #808080;
+        margin: 0;
+    }
+
+    #comm-vid {
+        /* position: fixed; right: 0; bottom: 0; */
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+    }
+
+    .ovlay {
+        background-color: rgba(0,0,0,0.5);
+        width: 100%;
+        height: 100%;
+    }
+
+    .ovlay-z {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .imghold {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    .error_msg {
+        border: none;
+        border-radius: 4px;
+        background-color: #f55336;
+        margin: 12px 0;
+        padding: 0 16px;
+    }
+
+    .error_msg p { color: white; font-size: 1.1rem; }
+
+    .linker {
+        color: #606060; 
+        font-size: 1.2rem;
+    }
+
+    .linker:hover { 
+        color: #7000FF;
+        font-weight: bold;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .benefits-list {
+        list-style: none; /* Remove default bullet points */
+        padding: 0;
+        margin: 0;
+    }
+      
+    .benefits-list li {
+        display: flex;
+        align-items: center;
+        margin: 10px 10px;
+        padding: 12px;
+        border-radius: 5px;
+        background-color: #f5f5f5; /* Light gray background */
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    }
+      
+    .benefits-list li i {
+        margin-right: 10px;
+        font-size: 18px;
+        color: #7000FF; /* Adjust color as needed */
+    }
+
+    .blurr {
+        -webkit-backdrop-filter: brightness(3) blur(12px);
+        backdrop-filter: brightness(3) blur(12px);
+    }
+
+
+    /* For infinite slide of collage on left side */
+    @keyframes slide {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-924px); }
+    }

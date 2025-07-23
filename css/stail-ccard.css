@@ -1,0 +1,132 @@
+/* styles.css */
+
+body {
+    font-family: 'Palanquin';
+    background-color: #f7f5f3;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.product-section, .payment-section {
+    margin-bottom: 20px;
+}
+
+.product-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-title {
+    font-weight: bold;
+}
+
+.product-number {
+    display: flex;
+    align-items: center;
+}
+
+.product-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.product-number input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+}
+
+.discount-link {
+    color: red;
+    text-decoration: none;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.total-row {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.payment-option label {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.payment-option p {
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+.card-icons img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.i1 { grid-area: f1; }
+.i2 { grid-area: f2; }
+.i3 { grid-area: f3; }
+.i4 { grid-area: f4; }
+.i5 { grid-area: f5; }
+
+.credit-card-form {
+    display: grid;
+    grid-template-areas:
+        'f1 f1'
+        'f2 f3'
+        'f4 f4'
+        'f5 f5'
+    ;
+    gap: 10px;
+    padding: 10px;
+}
+
+.credit-card-form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.credit-card-form div input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 8px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.checkout-button {
+    padding: 15px;
+    background-color: #7000ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
